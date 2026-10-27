@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sazulli · Agencia de Eventos en Lima Norte</title>
+<meta name="description" content="Sazulli, agencia de eventos en Lima Norte. Eventos corporativos, bodas, quinceañeros, cumpleaños, baby showers y más. Cotiza con Kelly al +51 946 091 273.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="loader" id="loader">
+  <div class="loader__word" aria-hidden="true">
+    <span>S</span><span>A</span><span>Z</span><span>U</span><span>L</span><span>L</span><span>I</span>
+  </div>
+  <div class="loader__bar"><i id="loaderBar"></i></div>
+  <div class="loader__pct" id="loaderPct">0%</div>
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <a href="#inicio" class="nav__logo">SAZULLI<small>Agencia de eventos</small></a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Eventos</a>
+    <a href="#incluye">Servicios</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#cobertura">Cobertura</a>
+    <a href="#contacto" class="nav__cta">Cotiza ahora</a>
+  </nav>
+  <button class="nav__burger" id="burger" aria-label="Abrir menú"><span></span><span></span></button>
+</header>
+
+<main>
+<!-- Hero -->
+<section class="hero" id="inicio">
+  <canvas id="sparkles"></canvas>
+  <div class="hero__glow"></div>
+  <div class="hero__inner">
+    <p class="hero__kicker reveal">✦ La agencia de eventos #1 de Lima Norte ✦</p>
+    <h1 class="hero__title" aria-label="Sazulli">
+      <span class="split">SAZULLI</span>
+    </h1>
+    <p class="hero__sub reveal">AGENCIA DE EVENTOS</p>
+    <p class="hero__rotator reveal">
+      Hacemos inolvidable tu
+      <span class="rotator" id="rotator"><em>boda</em></span>
+    </p>
+    <div class="hero__actions reveal">
+      <a href="#contacto" class="btn btn--gold magnetic"><span>Cotiza tu evento</span></a>
+      <a href="https://wa.me/51946091273?text=Hola%20Kelly%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20evento" target="_blank" rel="noopener" class="btn btn--ghost magnetic"><span>Escríbele a Kelly</span></a>
+    </div>
+  </div>
+  <a href="#nosotros" class="hero__scroll" aria-label="Bajar"><span></span></a>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Corporativos</span><i>✦</i><span>Bodas</span><i>✦</i><span>Quinceañeros</span><i>✦</i><span>Cumpleaños</span><i>✦</i><span>Baby Showers</span><i>✦</i><span>Graduaciones</span><i>✦</i><span>Aniversarios</span><i>✦</i><span>Fiestas Temáticas</span><i>✦</i>
+    <span>Corporativos</span><i>✦</i><span>Bodas</span><i>✦</i><span>Quinceañeros</span><i>✦</i><span>Cumpleaños</span><i>✦</i><span>Baby Showers</span><i>✦</i><span>Graduaciones</span><i>✦</i><span>Aniversarios</span><i>✦</i><span>Fiestas Temáticas</span><i>✦</i>
+  </div>
+</div>
+
+<!-- Nosotros -->
+<section class="about" id="nosotros">
+  <div class="container">
+    <p class="eyebrow reveal">— Nosotros</p>
+    <h2 class="statement" id="statement">En Sazulli no organizamos fiestas: creamos momentos que tu familia, tus amigos y tu equipo recordarán para siempre. Cada detalle, cada luz y cada sonrisa está pensada para ti.</h2>
+    <div class="about__grid">
+      <div class="about__card reveal">
+        <span class="about__num">01</span>
+        <h3>Todo en un solo lugar</h3>
+        <p>Decoración, catering, música, fotografía y coordinación. Tú disfrutas, nosotros nos encargamos de todo.</p>
+      </div>
+      <div class="about__card reveal">
+        <span class="about__num">02</span>
+        <h3>Atención personalizada</h3>
+        <p>Kelly te acompaña de principio a fin para que tu evento sea exactamente como lo soñaste.</p>
+      </div>
+      <div class="about__card reveal">
+        <span class="about__num">03</span>
+        <h3>Orgullosamente de Lima Norte</h3>
+        <p>Conocemos los mejores locales, proveedores y rincones del cono norte. Llegamos donde estés.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Servicios / Tipos de eventos -->
+<section class="services" id="servicios">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">— Tipos de eventos</p>
+      <h2 class="title reveal">Un evento para <em>cada</em> momento</h2>
+    </div>
+    <div class="cards">
+      <article class="card tilt reveal" style="--h1:#1d2b53;--h2:#d4af37">
+        <div class="card__art"><svg viewBox="0 0 64 64"><path d="M10 54V22l22-12 22 12v32M22 54V34h20v20M10 54h44" /></svg></div>
+        <h3>Corporativos</h3>
+        <p>Lanzamientos, aniversarios de empresa, fiestas de fin de año, conferencias y team building.</p>
+        <span class="card__more">Cotizar →</span>
+      </article>
+      <article class="card tilt reveal" style="--h1:#5b1d3a;--h2:#f5d0c5">
+        <div class="card__art"><svg viewBox="0 0 64 64"><circle cx="24" cy="36" r="14"/><circle cx="40" cy="36" r="14"/><path d="M32 8l4 6h-8z"/></svg></div>
+        <h3>Bodas</h3>
+        <p>Ceremonias y recepciones elegantes, desde íntimas hasta grandes celebraciones.</p>
+        <span class="card__more">Cotizar →</span>
+      </article>
+      <article class="card tilt reveal" style="--h1:#4a1d5b;--h2:#ff9ad5">
+        <div class="card__art"><svg viewBox="0 0 64 64"><path d="M14 44l6-24 12 12 12-12 6 24z"/><path d="M14 52h36"/><circle cx="20" cy="18" r="2.5"/><circle cx="32" cy="12" r="2.5"/><circle cx="44" cy="18" r="2.5"/></svg></div>
+        <h3>Quinceañeros</h3>
+        <p>Una noche de princesa: vals, coreografías, ambientación temática y show.</p>
+        <span class="card__more">Cotizar →</span>
+      </article>
+      <article class="card tilt reveal" style="--h1:#1d4a5b;--h2:#7ee8fa">
+        <div class="card__art"><svg viewBox="0 0 64 64"><rect x="12" y="32" width="40" height="20" rx="3"/><path d="M12 40h40M22 32v-8M32 32v-10M42 32v-8"/><path d="M22 20c-2-3 2-5 0-8M32 18c-2-3 2-5 0-8M42 20c-2-3 2-5 0-8"/></svg></div>
+        <h3>Cumpleaños</h3>
+        <p>Infantiles con animación y personajes, o fiestas adultas con DJ, barra y mucha vibra.</p>
+        <span class="card__more">Cotizar →</span>
+      </article>
+      <article class="card tilt reveal" style="--h1:#3b4a1d;--h2:#c8f7a6">
+        <div class="card__art"><svg viewBox="0 0 64 64"><circle cx="24" cy="24" r="10"/><circle cx="42" cy="20" r="8"/><path d="M24 34v18M42 28v24M20 52h8M38 52h8"/></svg></div>
+        <h3>Baby Shower</h3>
+        <p>Revelación de género, juegos, mesas dulces y una decoración tierna y espectacular.</p>
+        <span class="card__more">Cotizar →</span>
+      </article>
+      <article class="card tilt reveal" style="--h1:#5b3a1d;--h2:#ffd27e">
+        <div class="card__art"><svg viewBox="0 0 64 64"><path d="M6 26l26-12 26 12-26 12z"/><path d="M16 31v12c0 4 8 8 16 8s16-4 16-8V31M54 28v14"/></svg></div>
+        <h3>Graduaciones y promociones</h3>
+        <p>Fiestas de promo, ceremonias de egresados y celebraciones académicas.</p>
+        <span class="card__more">Cotizar →</span>
+      </article>
+      <article class="card tilt reveal" style="--h1:#1d1d5b;--h2:#b7a6ff">
+        <div class="card__art"><svg viewBox="0 0 64 64"><path d="M32 54s-20-12-20-28a10 10 0 0120-4 10 10 0 0120 4c0 16-20 28-20 28z"/></svg></div>
+        <h3>Aniversarios y familiares</h3>
+        <p>Bodas de plata y oro, reuniones familiares, bautizos y primeras comuniones.</p>
+        <span class="card__more">Cotizar →</span>
+      </article>
+      <article class="card tilt reveal" style="--h1:#5b1d1d;--h2:#ff8f6b">
+        <div class="card__art"><svg viewBox="0 0 64 64"><path d="M20 10l24 0-6 16h10L22 56l6-22H18z"/></svg></div>
+        <h3>Fiestas temáticas</h3>
+        <p>Halloween, neón, años 80, hawaiana, Gatsby… tú eliges el tema, nosotros lo hacemos realidad.</p>
+        <span class="card__more">Cotizar →</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Stats (ajusta las cifras a las reales) -->
+<section class="stats">
+  <div class="container stats__grid">
+    <div class="stat reveal"><strong data-count="500" data-prefix="+">0</strong><span>Eventos realizados</span></div>
+    <div class="stat reveal"><strong data-count="98" data-suffix="%">0</strong><span>Clientes felices</span></div>
+    <div class="stat reveal"><strong data-count="8">0</strong><span>Distritos de Lima Norte</span></div>
+    <div class="stat reveal"><strong data-count="24" data-suffix="/7">0</strong><span>Atención por WhatsApp</span></div>
+  </div>
+</section>
+
+<!-- Qué incluye: scroll horizontal -->
+<section class="hscroll" id="incluye">
+  <div class="hscroll__sticky">
+    <div class="hscroll__head container">
+      <p class="eyebrow">— Servicios</p>
+      <h2 class="title">Todo lo que tu evento <em>necesita</em></h2>
+    </div>
+    <div class="hscroll__track" id="hTrack">
+      <div class="panel" style="--c1:#d4af37;--c2:#3a2a05"><span class="panel__n">01</span><h3>Decoración y ambientación</h3><p>Arcos de globos, flores, backings, centros de mesa y mobiliario de lujo.</p></div>
+      <div class="panel" style="--c1:#e86a6a;--c2:#3a0d0d"><span class="panel__n">02</span><h3>Catering y buffet</h3><p>Bocaditos, buffet criollo e internacional, mesas dulces y tortas personalizadas.</p></div>
+      <div class="panel" style="--c1:#7d6bff;--c2:#120d3a"><span class="panel__n">03</span><h3>DJ, sonido e iluminación</h3><p>Equipos profesionales, luces robóticas, pista LED y efectos de humo.</p></div>
+      <div class="panel" style="--c1:#4fd1c5;--c2:#06302c"><span class="panel__n">04</span><h3>Foto y video</h3><p>Cobertura profesional, drone, cabina 360° y photobooth.</p></div>
+      <div class="panel" style="--c1:#ff9ad5;--c2:#3a0d2a"><span class="panel__n">05</span><h3>Animación y shows</h3><p>Hora loca, animadores, personajes, bailarines, mariachis y orquestas.</p></div>
+      <div class="panel" style="--c1:#ffd27e;--c2:#3a2a0d"><span class="panel__n">06</span><h3>Barra y bebidas</h3><p>Bartenders, coctelería de autor, barra libre y estaciones de bebidas.</p></div>
+      <div class="panel" style="--c1:#9be15d;--c2:#15300a"><span class="panel__n">07</span><h3>Locales y toldos</h3><p>Te ayudamos a conseguir el local ideal o armamos todo en tu casa o terraza.</p></div>
+      <div class="panel" style="--c1:#ffffff;--c2:#222222"><span class="panel__n">08</span><h3>Coordinación total</h3><p>Una wedding/event planner a cargo del cronograma para que tú solo disfrutes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Proceso -->
+<section class="process" id="proceso">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">— Cómo trabajamos</p>
+      <h2 class="title reveal">De la idea a la <em>fiesta</em> en 4 pasos</h2>
+    </div>
+    <div class="timeline" id="timeline">
+      <div class="timeline__line"><i id="timelineFill"></i></div>
+      <div class="step reveal"><b>1</b><div><h3>Conversamos</h3><p>Escríbele a Kelly por WhatsApp y cuéntale qué celebras, la fecha y tu presupuesto.</p></div></div>
+      <div class="step reveal"><b>2</b><div><h3>Diseñamos tu propuesta</h3><p>Te enviamos una cotización a medida con ideas, temática y opciones de paquetes.</p></div></div>
+      <div class="step reveal"><b>3</b><div><h3>Preparamos cada detalle</h3><p>Coordinamos proveedores, decoración, menú y cronograma. Tú solo apruebas.</p></div></div>
+      <div class="step reveal"><b>4</b><div><h3>¡A celebrar!</h3><p>El día del evento estamos contigo de inicio a fin para que todo salga perfecto.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonios (reemplaza por testimonios reales de tus clientes) -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">— Testimonios</p>
+      <h2 class="title reveal">Lo que dicen <em>nuestros clientes</em></h2>
+    </div>
+    <div class="slider reveal" id="slider">
+      <div class="slider__track">
+        <blockquote class="quote is-active">
+          <p>“La fiesta de 15 de mi hija fue un sueño. Kelly estuvo pendiente de todo y la decoración quedó espectacular.”</p>
+          <cite>Cliente · Quinceañero en Los Olivos</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Organizaron nuestra fiesta de fin de año corporativa para 150 personas. Puntuales, profesionales y con mucha creatividad.”</p>
+          <cite>Cliente · Evento corporativo en Independencia</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Nuestra boda fue perfecta. Nos olvidamos del estrés y solo disfrutamos. ¡Totalmente recomendados!”</p>
+          <cite>Clientes · Boda en San Martín de Porres</cite>
+        </blockquote>
+      </div>
+      <div class="slider__dots" id="dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Cobertura -->
+<section class="coverage" id="cobertura">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">— Cobertura</p>
+      <h2 class="title reveal">Somos de <em>Lima Norte</em>, llegamos a todo Lima</h2>
+    </div>
+    <div class="districts">
+      <span class="chip reveal">Los Olivos</span>
+      <span class="chip reveal">Independencia</span>
+      <span class="chip reveal">Comas</span>
+      <span class="chip reveal">San Martín de Porres</span>
+      <span class="chip reveal">Puente Piedra</span>
+      <span class="chip reveal">Carabayllo</span>
+      <span class="chip reveal">Ancón</span>
+      <span class="chip reveal">Santa Rosa</span>
+      <span class="chip chip--alt reveal">+ Todo Lima Metropolitana</span>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section class="contact" id="contacto">
+  <div class="contact__bg"></div>
+  <div class="container contact__grid">
+    <div class="contact__info">
+      <p class="eyebrow reveal">— Contacto</p>
+      <h2 class="title reveal">¿Lista la <em>fecha</em>?<br>Hablemos.</h2>
+      <p class="reveal">Cuéntanos qué quieres celebrar y Kelly te responderá con una propuesta a tu medida.</p>
+      <a class="contact__phone reveal magnetic" href="tel:+51946091273">+51 946 091 273</a>
+      <p class="contact__who reveal">Contacto: <strong>Kelly</strong> · Lima Norte, Perú</p>
+      <div class="contact__links reveal">
+        <a href="https://wa.me/51946091273" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="tel:+51946091273">Llamar</a>
+      </div>
+    </div>
+    <form class="form reveal" id="quoteForm">
+      <h3>Cotiza tu evento</h3>
+      <div class="field"><input id="fName" required placeholder=" "><label for="fName">Tu nombre</label></div>
+      <div class="field">
+        <select id="fType" required>
+          <option value="" disabled selected hidden></option>
+          <option>Evento corporativo</option><option>Boda</option><option>Quinceañero</option><option>Cumpleaños</option><option>Baby shower</option><option>Graduación / promoción</option><option>Aniversario / familiar</option><option>Fiesta temática</option><option>Otro</option>
+        </select>
+        <label for="fType">Tipo de evento</label>
+      </div>
+      <div class="field-row">
+        <div class="field"><input id="fDate" type="date" placeholder=" "><label for="fDate" class="is-up">Fecha</label></div>
+        <div class="field"><input id="fGuests" type="number" min="1" placeholder=" "><label for="fGuests">N.º invitados</label></div>
+      </div>
+      <div class="field"><input id="fPlace" placeholder=" "><label for="fPlace">Distrito / lugar</label></div>
+      <div class="field"><textarea id="fMsg" rows="3" placeholder=" "></textarea><label for="fMsg">Cuéntanos tu idea</label></div>
+      <button class="btn btn--gold btn--full" type="submit"><span>Enviar por WhatsApp</span></button>
+      <small>Se abrirá WhatsApp con tu mensaje listo para enviar a Kelly.</small>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__big">SAZULLI</div>
+  <div class="container footer__row">
+    <span>© <span id="year"></span> Sazulli · Agencia de Eventos · Lima Norte</span>
+    <span>Kelly · <a href="tel:+51946091273">+51 946 091 273</a></span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/51946091273?text=Hola%20Kelly%2C%20quiero%20cotizar%20un%20evento" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path fill="currentColor" d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.7a10.7 10.7 0 01-5.5-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.7 10.7 0 1116 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 01-2.6-1.6 9.8 9.8 0 01-1.8-2.3c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 000-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.9.4 3.7 3.7 0 00-1.1 2.7 6.5 6.5 0 001.3 3.4 14.8 14.8 0 005.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 002.2-1.6 2.8 2.8 0 00.2-1.6c-.1-.1-.3-.2-.6-.3z"/></svg>
+  <span>¡Escríbele a Kelly!</span>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
